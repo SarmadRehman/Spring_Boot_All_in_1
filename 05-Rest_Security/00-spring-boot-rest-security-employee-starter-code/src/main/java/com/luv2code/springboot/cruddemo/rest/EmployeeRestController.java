@@ -15,12 +15,14 @@ public class EmployeeRestController {
 
     @Autowired
     public EmployeeRestController(EmployeeService theEmployeeService) {
+
         employeeService = theEmployeeService;
     }
 
     // expose "/employees" and return a list of employees
     @GetMapping("/employees")
     public List<Employee> findAll() {
+
         return employeeService.findAll();
     }
 
