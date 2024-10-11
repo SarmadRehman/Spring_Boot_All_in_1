@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.support.HttpRequestHandlerServlet;
 
 @Controller
@@ -31,6 +32,17 @@ public class HelloWorldController {
         theName = theName.toUpperCase();
         // message creation
         String result = "Yo..!!" + theName;
+        // adding to the Model
+        model.addAttribute("message", result);
+        // return the page
+        return "helloworld";
+    }
+    @RequestMapping("/processFormVersionThree")
+    public String handleThirdReq(@RequestParam("studentName") String theName, Model model) {
+
+        theName = theName.toUpperCase();
+        // message creation
+        String result = "Yo from the third response..!!" + theName;
         // adding to the Model
         model.addAttribute("message", result);
         // return the page
