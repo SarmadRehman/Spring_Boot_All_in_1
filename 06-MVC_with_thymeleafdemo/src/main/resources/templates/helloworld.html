@@ -4,8 +4,11 @@
   
     <title>Thymeleaf Demo..!</title>
 </head>
+<link rel="stylesheet" href="mystyle.css">
+<br><br>
 <body>
-<p th:text="'Time on the server, ' + ${theDate} + '!'"></p>
+ <h1>Hello to the Student:</h1>
+<span th:text="${param.studentName}"></span>
 </body>
 
 
