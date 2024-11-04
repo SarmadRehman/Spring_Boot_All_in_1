@@ -3,7 +3,7 @@ package com.springboot.mvc_thymeleaf.thymeleafdemo.model;
 public class Student {
 
     String firstName;
-    String lasttName;
+    String lastName;
 
     public Student(){
 
@@ -17,16 +17,16 @@ public class Student {
         this.firstName = firstName;
     }
 
-    public String getLasttName() {
-        return lasttName;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLasttName(String lasttName) {
-        this.lasttName = lasttName;
+    public void setLastName(String lasttName) {
+        this.lastName = lasttName;
     }
 
     public Student(String firstName, String lasttName) {
         this.firstName = firstName;
-        this.lasttName = lasttName;
+        this.lastName = lasttName;
     }
 }
