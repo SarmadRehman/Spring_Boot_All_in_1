@@ -1,9 +1,12 @@
 package com.springboot.mvc_thymeleaf.thymeleafdemo.model;
 
+import java.util.List;
+
 public class Student {
 
     String firstName;
     String lastName;
+    String Country;
 
     public Student(){
 
@@ -28,5 +31,13 @@ public class Student {
     public Student(String firstName, String lasttName) {
         this.firstName = firstName;
         this.lastName = lasttName;
+    }
+
+    public String getCountry() {
+        return Country;
+    }
+
+    public void setCountry(String country) {
+        Country = country;
     }
 }
