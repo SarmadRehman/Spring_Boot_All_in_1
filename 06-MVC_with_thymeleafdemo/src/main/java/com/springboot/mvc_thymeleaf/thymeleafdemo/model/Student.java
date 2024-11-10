@@ -1,5 +1,6 @@
 package com.springboot.mvc_thymeleaf.thymeleafdemo.model;
 
+
 import java.util.List;
 
 public class Student {
@@ -7,6 +8,8 @@ public class Student {
     String firstName;
     String lastName;
     String Country;
+
+    List<String> favoriteSystems;
 
     public Student(){
 
@@ -40,4 +43,13 @@ public class Student {
     public void setCountry(String country) {
         Country = country;
     }
+
+    public List<String> getFavoriteSystems() {
+        return favoriteSystems;
+    }
+
+    public void setFavoriteSystems(List<String> favoriteSystems) {
+        this.favoriteSystems = favoriteSystems;
+    }
 }
+
