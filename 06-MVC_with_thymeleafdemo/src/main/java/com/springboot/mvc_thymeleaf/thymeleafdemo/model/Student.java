@@ -8,8 +8,8 @@ public class Student {
     String firstName;
     String lastName;
     String Country;
-
     List<String> favoriteSystems;
+    String favoriteLanguage;
 
     public Student(){
 
@@ -50,6 +50,14 @@ public class Student {
 
     public void setFavoriteSystems(List<String> favoriteSystems) {
         this.favoriteSystems = favoriteSystems;
+    }
+
+    public String getFavoriteLanguage() {
+        return favoriteLanguage;
+    }
+
+    public void setFavoriteLanguage(String favoriteLanguage) {
+        this.favoriteLanguage = favoriteLanguage;
     }
 }
 

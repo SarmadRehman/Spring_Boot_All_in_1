@@ -49,8 +49,8 @@ public class StudentController {
     // for Posting to the html page
     @PostMapping("/processStudentForm")
     public String processForm(@ModelAttribute("student") Student theStudent) {
-        // log the input data
 
+        // log the input data
         System.out.println("theStudent: " + theStudent.getFirstName() + " " + theStudent.getLastName());
         return "student-confirmation";
     }
