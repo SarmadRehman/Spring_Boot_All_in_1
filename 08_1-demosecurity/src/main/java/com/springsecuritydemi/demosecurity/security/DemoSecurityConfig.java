@@ -47,7 +47,9 @@ public class DemoSecurityConfig {
                                 .loginPage("/showMyLoginPage") // for having a GetMapping in controller
                                 .loginProcessingUrl("/authenticateTheUser") // no mapping required provided by the SpringSecurity
                                 .permitAll()
-                );
+                )
+                .logout(logout ->logout.permitAll())
+        ;
 
         return http.build();
     }
